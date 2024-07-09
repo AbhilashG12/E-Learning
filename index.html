@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-learning Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">E-Learn</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search courses...">
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Unlock Your Learning Potential</h1>
+      <p>Join thousands of learners and explore new skills</p>
+      <button>Browse Courses</button>
+      <button>Sign Up</button>
+    </div>
+    <div class="hero-image">
+      <img src="hero-image.jpg" alt="Learning">
+    </div>
+  </section>
+
+  <section class="featured-courses">
+    <h2>Featured Courses</h2>
+    <div class="course-card">
+      <img src="course1.jpg" alt="Course 1">
+      <h3>Course Title 1</h3>
+      <p>Short description of the course.</p>
+      <span>Duration: 10 hours</span>
+      <span>Enrolled: 500 students</span>
+      <span>Rating: ★★★★☆</span>
+      <button>Enroll Now</button>
+      <a href="#">Learn More</a>
+    </div>
+    <!-- Repeat for other courses -->
+  </section>
+
+  <section class="categories">
+    <h2>Explore Categories</h2>
+    <div class="category">
+      <img src="category1-icon.png" alt="Category 1">
+      <h3>Business</h3>
+    </div>
+    <!-- Repeat for other categories -->
+  </section>
+
+  <section class="instructors">
+    <h2>Popular Instructors</h2>
+    <div class="instructor">
+      <img src="instructor1.jpg" alt="Instructor 1">
+      <h3>John Doe</h3>
+      <p>Expert in Marketing</p>
+    </div>
+    <!-- Repeat for other instructors -->
+  </section>
+
+  <section class="blog">
+    <h2>Latest from Our Blog</h2>
+    <div class="blog-post">
+      <img src="blog1.jpg" alt="Blog Post 1">
+      <h3>How to Improve Your Learning Skills</h3>
+      <p>Read our latest tips and tricks on enhancing your learning abilities...</p>
+    </div>
+    <!-- Repeat for other blog posts -->
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial">
+      <p>"This platform has transformed my learning experience!"</p>
+      <span>John Smith</span>
+      <span>Course: Web Development</span>
+      <span>Rating: ★★★★★</span>
+      <img src="student1.jpg" alt="Student 1">
+    </div>
+    <!-- Repeat for other testimonials -->
+  </section>
+
+  <section class="newsletter">
+    <h2>Stay Updated</h2>
+    <input type="email" placeholder="Enter your email">
+    <button>Subscribe</button>
+  </section>
+
+  <footer>
+    <div class="footer-about">
+      <h3>About Us</h3>
+      <p>We are committed to providing high-quality education to everyone, everywhere.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="social-media">
+      <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+      <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+    </div>
+  </footer>
+  <script>
+    // JavaScript for interactive elements
+
+// Example: Filter Courses
+document.querySelector('.filter-btn').addEventListener('click', function() {
+    let category = document.querySelector('.category-select').value;
+    // Filter courses based on the selected category
+    // This is just a placeholder example; actual implementation would involve filtering course data
+    alert('Filtering courses for category: ' + category);
+  });
+  
+  // Example: Enroll Button
+  document.querySelectorAll('.enroll-btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+      let courseId = this.dataset.courseId;
+      // Enroll the user in the course with the given courseId
+      // This is just a placeholder example; actual implementation would involve backend API calls
+      alert('Enrolling in course ID: ' + courseId);
+    });
+  });
+  
+  </script>
+</body>
+</html>
